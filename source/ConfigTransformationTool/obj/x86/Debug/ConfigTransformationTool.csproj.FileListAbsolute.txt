@@ -1,0 +1,9 @@
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\bin\Debug\ParametersSchema.xsd
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\bin\Debug\ctt.console.exe
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\bin\Debug\ctt.console.pdb
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\bin\Debug\Microsoft.Web.XmlTransform.dll
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\obj\x86\Debug\ConfigTransformationTool.csprojAssemblyReference.cache
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\obj\x86\Debug\ConfigTransformationTool.csproj.CoreCompileInputs.cache
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\obj\x86\Debug\ConfigTransformationTool.csproj.CopyComplete
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\obj\x86\Debug\ctt.console.exe
+C:\Users\gokhan\Desktop\ctt\sourceCode\ctt\source\ConfigTransformationTool\obj\x86\Debug\ctt.console.pdb
