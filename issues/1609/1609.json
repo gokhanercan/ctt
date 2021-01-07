@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Hi,\r\n\r\nAfter transforming with your tool, our web.configs are running into formatting issues with a few of our appSetting key values and a regex farther along.\r\n\r\nBefore transform:\r\n    value1=\"Product1&lt;sup style=&#34;text-decoration: none;&#34;>&#174;&lt;/sup>\"\r\n    value2=\"Product2&lt;sup style=&#34;text-decoration: none;&#34;>&#8482;&lt;/sup>\"\r\n    ^.*(?=.{8,})(?=.*\\d)(?=.*[a-zA-Z])(?=.*[@#$%^*&amp;&quot;&apos;&lt;&gt;!_=?:|,()-]).*$\r\n\r\nAfter transform:\r\n    value1=\"Product1&lt;sup style=&quot;text-decoration: none;&quot;&gt;®&lt;/sup&gt;\"\r\n    value2=\"Product2&lt;sup style=&quot;text-decoration: none;&quot;&gt;™&lt;/sup&gt;\"\r\n    ^.*(?=.{8,})(?=.*\\d)(?=.*[a-zA-Z])(?=.*[@#$%^*&amp;&quot;'&lt;&gt;!_=?:|,()-]).*$____\r\n\r\nI know that this issue stems from how the .NET framework reads and saves XML documents but are there any workarounds to preserve these?",
+    "LastUpdatedDate": "2013-10-24T02:36:15.103-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2013-10-24T02:36:15.103-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Encoded XML malformed on transform",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1609
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

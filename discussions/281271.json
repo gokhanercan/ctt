@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "705115",
+    "ThreadId": "281271",
+    "Html": "<p>From documentation it is not clear, can a destination be the same as source?</p>\n<p>Also on page <a href=\"http://ctt.codeplex.com/documentation\">http://ctt.codeplex.com/documentation</a><em>&nbsp;parameters:&nbsp; should be (p:) not (d:)</em></p>",
+    "PostedDate": "2011-11-29T21:37:20.903-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "705634",
+    "ThreadId": "281271",
+    "Html": "<p>I've tested and confirmed that you can update the file in place(I recommend you&nbsp;to make &nbsp;backup before)</p>\r\n<p>e.g.</p>\r\n<pre style=\"font-family: Consolas; background: white; color: black; font-size: 13px;\">ctt&nbsp;s:..\\web.config&nbsp;t:WebConfig.CTT&nbsp;d:..\\web.config\r\n</pre>",
+    "PostedDate": "2011-11-30T20:49:02.943-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

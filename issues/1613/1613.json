@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "If you have the following config:\r\n```\r\n<applicationSettings>\r\n  <BokaNet.TelliQDrivingLog.Properties.Settings>\r\n    <setting name=\"BokaApiUrl\" serializeAs=\"String\">\r\n      <value>http://localhost:52140/api/</value>\r\n    </setting>\r\n    <setting name=\"CustomerId\" serializeAs=\"String\">\r\n      <value>demo</value>\r\n    </setting>\r\n  </BokaNet.TelliQDrivingLog.Properties.Settings>\r\n</applicationSettings>\r\n```\r\nand a transform:\r\n```\r\n<applicationSettings>\r\n  <BokaNet.TelliQDrivingLog.Properties.Settings>\r\n    <setting name=\"BokaApiUrl\" serializeAs=\"String\" xdt:Transform=\"Replace\" xdt:Locator=\"Match(name)\">\r\n      <value>http://foo.bar/api/</value>\r\n    </setting>\r\n    <setting name=\"CustomerId\" serializeAs=\"String\" xdt:Transform=\"Replace\" xdt:Locator=\"Match(name)\">\r\n      <value>demo</value>\r\n    </setting>\r\n  </BokaNet.TelliQDrivingLog.Properties.Settings>\r\n</applicationSettings>\r\n```\r\nThat you transform with the option `preservewhitespace` the resulting config does not have whitespaces within the `setting`-element.\r\n![Image](http://snag.gy/q1s6S.jpg)",
+    "LastUpdatedDate": "2016-04-08T05:29:33.41-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2016-04-08T03:04:00.637-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "PreserveWhitespace does not preserve whitespace within an element",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1613
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "I don't believe that library (https://xdt.codeplex.com), which we are using allows you to set PreserveWhitespace in XmlTransformation class.\nIf you really want this to be fixed - open a bug on them first, or you can send PR to their library + our project.",
+      "PostedDate": "2016-04-08T05:29:33.41-07:00",
+      "Id": 198449
+    }
+  ]
+}

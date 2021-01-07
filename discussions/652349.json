@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "1466288",
+    "ThreadId": "652349",
+    "Html": "The last update was October 2015 and it was an Alpha release. Is any work being done on this tool? It works great with a couple of minor issues. I'd like to use it but I can't get anything in Alpha release status past our compliance people...<br />\n",
+    "PostedDate": "2016-03-09T11:28:26.717-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1466290",
+    "ThreadId": "652349",
+    "Html": "It was called <code>alpha</code> because nobody cared, and because it used <a href=\"https://www.nuget.org/packages/Microsoft.Web.Xdt/\" rel=\"nofollow\">https://www.nuget.org/packages/Microsoft.Web.Xdt/</a> with version 1.0.0-alpha. We can give it any version you want, like 100-super-stable-release, but still no warranties from my side. \r<br />\nI understand that your company can have strict rules for the versioning and I am willing to help. Plan can be simple - upgrade to the latest Microsoft.Web.Xdt and give it the same version as Microsoft.Web.Xdt - send pull request - I will verify, merge and update the binary.\r<br />\n<br />\nBut just to be clear: there are no development is going on for this tool, I maintain just a bit. Honestly I have not used it for the last 5 years or so.<br />\n",
+    "PostedDate": "2016-03-09T11:44:35.893-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1466293",
+    "ThreadId": "652349",
+    "Html": "That's OK. If it's not being actively updated I guess I'll look for another solution(?). Some of the issues reported, like breaking the line breaks, nobody seems interested in addressing. I know people offered some alternative solutions and you pointed the OP to where to look at the code, but I'd really prefer that the output be the same as the input except for the &quot;documented&quot; updates via the transform files. I can't get this past the technical evaluation folks if it dramatically reformats the config file and I don't have the coding skill set to update the tool. I'm just a DevOps guy looking for a tool to do XML Transforms outside MSBuild. \r<br />\n<br />\nThanks.<br />\n",
+    "PostedDate": "2016-03-09T11:51:56.727-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

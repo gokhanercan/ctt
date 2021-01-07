@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "<p>It will be good to add a parameter to override read-only file.</p>\n<p>Currently I have to add extra line before each CTT call like this</p>\n<p>&nbsp;</p>\n<p>attrib -r MY.config</p>\n<p>%cttPath% s:My.config t:MY.CTT d:MY.config</p>\n",
+    "LastUpdatedDate": "2013-08-29T06:32:42.223-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2012-02-02T17:14:06.813-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add ability to override read-only file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 3,
+    "Id": 1238
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "sorry, tool is not supported anymore. I don't use it and I don't have a time to upgrade anything. but feel free to use sources to build your own version!",
+      "PostedDate": "2012-06-28T00:58:01.463-07:00",
+      "Id": 86670
+    }
+  ]
+}

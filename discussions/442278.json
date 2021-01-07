@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1038327",
+    "ThreadId": "442278",
+    "Html": "Version\r<br />\nConfig Transformation Tool, Version=1.4.4802.22262, <a href=\"http://ctt.codeplex.com\" rel=\"nofollow\">http://ctt.codeplex.com</a> by OutcoldSolutions, <a href=\"http://outcoldman.com\" rel=\"nofollow\">http://outcoldman.com</a>, 2013\r<br />\n<br />\nHere are files:\r<br />\n<a href=\"http://pastebin.com/udD1kBjP\" rel=\"nofollow\">TEXT</a>\r<br />\n<br />\nAfter transformation result format does not match transformation format.\r<br />\n<br />\ncommand line (notice pw is there):\r<br />\nctt pw verbose s:src.txt t:transform.txt d:dst.txt\r<br />\n<br />\nAm I doing something wrong?<br />\n",
+    "PostedDate": "2013-05-01T16:18:52.713-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1039637",
+    "ThreadId": "442278",
+    "Html": "There are so many xml readers / writers and each of them is trying to change xml source how it wants. adbre suggested one more workaround for this <a href=\"https://ctt.codeplex.com/SourceControl/network/forks/adbre/ctt/contribution/4335\" rel=\"nofollow\">add support for indenting output</a>. This pull request was merged and I already built new version with support of indenting: <a href=\"https://ctt.codeplex.com/releases/view/106225\" rel=\"nofollow\">https://ctt.codeplex.com/releases/view/106225</a>. Just download new version and add one more parameter &quot;i&quot; to the command line &quot;ctt i pw verbose s:src.txt t:transform.txt d:dst.txt &quot;<br />\n",
+    "PostedDate": "2013-05-05T16:09:23.477-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

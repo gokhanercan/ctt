@@ -1,0 +1,42 @@
+[
+  {
+    "Id": "705915",
+    "ThreadId": "281480",
+    "Html": "\r\n<p>It would be nice to have a nant task to do the transformation without having to call the exe (which i think it looks ugly)...</p>\r\n<p>Do you see it plausible for the next release?</p>\r\n<p>PS: I'm here to help with the coding... :)</p>\r\n",
+    "PostedDate": "2011-12-01T08:19:13.38-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "705929",
+    "ThreadId": "281480",
+    "Html": "<p>Hi,</p>\r\n<p>I don't need more this tool and I don't think that I will do any improvements in future. If you want you can try to write this task and prepare the patch for this source code. After that I will add you as contributor to this project.</p>",
+    "PostedDate": "2011-12-01T08:31:17.067-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "705947",
+    "ThreadId": "281480",
+    "Html": "<p>Challenge accepted!</p>\r\n<p>Thanks.</p>",
+    "PostedDate": "2011-12-01T08:48:53.657-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "827276",
+    "ThreadId": "281480",
+    "Html": "<p>I wonder why you don't need this tool any more? &nbsp;I'm finding more and more reasons to use it. &nbsp;I firmly believe that config transforms are a _deployment_ related concern, and not a build/compile concern: &nbsp;I don't want my build server to compile my code 3 times to generate the correct config files for different environments that I am going to deploy to. &nbsp;Would be interested to hear comments and try to prevent this useful tool turning into abandon-ware.....</p>",
+    "PostedDate": "2012-04-23T03:52:26.117-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "827542",
+    "ThreadId": "281480",
+    "Html": "<p><a class=\"UserProfileLink\" href=\"http://www.codeplex.com/site/users/view/pmcevoy\">pmcevoy</a>, I have leaved the company where I worked and where we used it. Yes it is very useful tool when you have several environment to which you&nbsp;need deploy your application with all services/web apps, if you do not&nbsp;build a setup package. At current company where I'm working we have setup package, so I do not need this tool anymore. This means that I will not add any new features, but will try to&nbsp;fix all&nbsp;bugs which will be submitted.</p>",
+    "PostedDate": "2012-04-23T14:00:42.873-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

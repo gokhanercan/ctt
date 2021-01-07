@@ -1,0 +1,58 @@
+[
+  {
+    "Id": "495873",
+    "ThreadId": "227826",
+    "Html": "<p>I'm trying to integrate&nbsp;ctt into a VS2008 solution, but it turns out ctt returns exit code 4 on success. MSBuild assumes nonzero to be an error, so now I need to ignore exit codes in order to get this to work. Please change success return to exit code 0, which is I believe is a general convention.</p>\r\n<p>Regards,<br>Bart</p>",
+    "PostedDate": "2010-09-20T02:28:51.52-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "495891",
+    "ThreadId": "227826",
+    "Html": "<p>Hi Bart.</p>\r\n<p>Sorry, it was my misprint ( http://ctt.codeplex.com/SourceControl/diff/file/view/880?fileId=5293 )&nbsp;. Changed. Please download last version at&nbsp;<a href=\"http://ctt.codeplex.com/releases/view/52627\">http://ctt.codeplex.com/releases/view/52627</a></p>\r\n<p>Thanks for feedback.&nbsp;</p>",
+    "PostedDate": "2010-09-20T03:09:12.783-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "496403",
+    "ThreadId": "227826",
+    "Html": "<p>Nice, thanks for the quick fix.</p>\r\n<p>Regards,<br>Bart</p>",
+    "PostedDate": "2010-09-21T03:15:47.513-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1117478",
+    "ThreadId": "227826",
+    "Html": "Is this bug active again. I'm getting a return code of 4 in v1.4.1.0.<br />\n",
+    "PostedDate": "2013-11-04T20:44:12.51-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1117852",
+    "ThreadId": "227826",
+    "Html": "Could you verify that you don't have any errors in output? <br />\n",
+    "PostedDate": "2013-11-05T09:56:18-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1117859",
+    "ThreadId": "227826",
+    "Html": "\r\n<div dir=\"ltr\">I found that I indeed had an error, and that's what the issue. :-)\r\n<div><br>\r\n</div>\r\n<div>Thanks for the reply!</div>\r\n</div>\r\n<div><br>\r\n<br>\r\n<div></div>\r\n</div>\r\n",
+    "PostedDate": "2013-11-05T10:01:45.607-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1117894",
+    "ThreadId": "227826",
+    "Html": "Great, please let me know if you will have any other issues. I glad to hear that people like to use this tool. <br />\n",
+    "PostedDate": "2013-11-05T10:26:21.63-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

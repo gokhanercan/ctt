@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "<p>Hello, Denis</p>\n<p>&nbsp;</p>\n<p>You have grate extra feature to share same parameters between different transformations but I think more useful and obvious is too share sections using configSource. For example using some flag like &quot;/include&quot; on ctt exec, ctt should include configSource linked xml on source file (not real source but it&#39;s temp copy) before transformation also with transformation.</p>\n<p>&nbsp;</p>\n<p>I was sure that Microsoft have already implement it, and looked across TransformationTask in Reflector, but after searching stackoverflow I found that out of the box we just have one inconvenient way to get params from xml on deploy (http://sedodream.com/2012/05/13/VSWebPublishHowToParameterizeConnectionStringsOutsideOfWebconfig.aspx).</p>\n",
+    "LastUpdatedDate": "2012-09-25T19:41:09.65-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2012-09-23T11:25:56.587-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Ability to include configSource configs.",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 1605
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Hi Denis,\r\nI don't have any resources right now to implement this, but if you want to implement this - I'd like to include this in next release. Which actually will contain only this feature ;)\r\n\r\nThanks,\r\nDen",
+      "PostedDate": "2012-09-25T19:41:09.65-07:00",
+      "Id": 86677
+    }
+  ]
+}

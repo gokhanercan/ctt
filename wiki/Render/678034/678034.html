@@ -1,0 +1,143 @@
+<div class="wikidoc"><b>Arguments:</b>
+<ul><li><i>source: (s:)</i> - source file path</li>
+<li><i>transform: (t:)</i> - transform file path</li>
+<li><i>destination: (d:)</i> - destination file path</li>
+<li><i>parameters: (p:)</i> - (Optional parameter) string of parameters used expected by source file separated by &#39;;&#39;, value should be separated from name by &#39;:&#39;, if value contains spaces - quote it</li>
+<li><i>fpt</i>  - (Optional parameter) force parameters task (if parameters argument is empty, but need to apply default values), default is false</li>
+<li><i>v</i> - (Optional parameter) verbose output. </li></ul>
+
+<h2>Example 1 (Without parameters):</h2>
+source.config file content:<br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;?</span><span style="color:#A31515;">xml</span> <span style="color:Red;">version</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">1.0</span><span style="color:Black;">&quot;</span><span style="color:Blue;">?&gt;</span>
+
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+
+	<span style="color:Blue;">&lt;</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+		<span style="color:Blue;">&lt;</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup1</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test1</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">True</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test2</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">600</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup2</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test3</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">True</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+
+		<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+	<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+	
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+</pre></div><br />transform.config file content:<br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;?</span><span style="color:#A31515;">xml</span> <span style="color:Red;">version</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">1.0</span><span style="color:Black;">&quot;</span><span style="color:Blue;">?&gt;</span>
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">configuration</span> <span style="color:Red;">xmlns:xdt</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">http://schemas.microsoft.com/XML-Document-Transform</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+	
+	<span style="color:Blue;">&lt;</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+		<span style="color:Blue;">&lt;</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup1</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test2</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">601</span><span style="color:Black;">&quot;</span> <span style="color:Red;">xdt:Transform</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Replace</span><span style="color:Black;">&quot;</span>  <span style="color:Red;">xdt:Locator</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Match(key)</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+		<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+	<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+	
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+</pre></div><br />Then you can use one of the command line<br /><i>ctt.exe source:&quot;source.config&quot; transform:&quot;transform.config&quot; destination:&quot;destination.config&quot;</i><br /><i>ctt.exe s:source.config t:transform.config d:destination.config</i><br /><br />destination.config file will have content:<br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;?</span><span style="color:#A31515;">xml</span> <span style="color:Red;">version</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">1.0</span><span style="color:Black;">&quot;</span><span style="color:Blue;">?&gt;</span>
+
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+
+	<span style="color:Blue;">&lt;</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+		<span style="color:Blue;">&lt;</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup1</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test1</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">True</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test2</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">601</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup2</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test3</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">True</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+
+		<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+	<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+	
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+</pre></div>
+<h2>Example 2 (With parameters):</h2>
+source.config file content:<br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;?</span><span style="color:#A31515;">xml</span> <span style="color:Red;">version</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">1.0</span><span style="color:Black;">&quot;</span><span style="color:Blue;">?&gt;</span>
+
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+
+	<span style="color:Blue;">&lt;</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+		<span style="color:Blue;">&lt;</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup1</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test1</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">False</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test2</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">600</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup2</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test3</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">C:\Test\</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+
+		<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+	<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+	
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+</pre></div><br />transform.config file content (two parameters there: <i>Parameter1</i> with default value and <i>Test3Value</i>):<br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;?</span><span style="color:#A31515;">xml</span> <span style="color:Red;">version</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">1.0</span><span style="color:Black;">&quot;</span><span style="color:Blue;">?&gt;</span>
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">configuration</span> <span style="color:Red;">xmlns:xdt</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">http://schemas.microsoft.com/XML-Document-Transform</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+	
+	<span style="color:Blue;">&lt;</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+		<span style="color:Blue;">&lt;</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup1</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test2</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">601</span><span style="color:Black;">&quot;</span> <span style="color:Red;">xdt:Transform</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Replace</span><span style="color:Black;">&quot;</span>  <span style="color:Red;">xdt:Locator</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Match(key)</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test1</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">{Parameter1:True5665}</span><span style="color:Black;">&quot;</span> <span style="color:Red;">xdt:Transform</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Replace</span><span style="color:Black;">&quot;</span>  <span style="color:Red;">xdt:Locator</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Match(key)</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+			
+			<span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup2</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+				<span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+					<span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test3</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">{Test3Value}</span><span style="color:Black;">&quot;</span> <span style="color:Red;">xdt:Transform</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Replace</span><span style="color:Black;">&quot;</span>  <span style="color:Red;">xdt:Locator</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Match(key)</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+				<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+			<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+		<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+	<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+	
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+</pre></div><br />Command line with parameters:<br /><i>ctt.exe s:s.config t:t.config d:d.config p:Parameter1:True;Test3Value:&quot;c:\Program Files\Test&quot;&quot;</i><br /><br />after execution destination.config file will have content:<br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">&lt;?</span><span style="color:#A31515;">xml</span> <span style="color:Red;">version</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">1.0</span><span style="color:Black;">&quot;</span><span style="color:Blue;">?&gt;</span>
+<span style="color:Blue;">&lt;</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+  <span style="color:Blue;">&lt;</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+    <span style="color:Blue;">&lt;</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+      <span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup1</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+        <span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+          <span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test1</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">True</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+          <span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test2</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">601</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+        <span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+      <span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+      <span style="color:Blue;">&lt;</span><span style="color:#A31515;">group</span> <span style="color:Red;">name</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">TestGroup2</span><span style="color:Black;">&quot;</span><span style="color:Blue;">&gt;</span>
+        <span style="color:Blue;">&lt;</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+          <span style="color:Blue;">&lt;</span><span style="color:#A31515;">value</span> <span style="color:Red;">key</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">Test3</span><span style="color:Black;">&quot;</span> <span style="color:Red;">value</span><span style="color:Blue;">=</span><span style="color:Black;">&quot;</span><span style="color:Blue;">c:\Program Files\Test</span><span style="color:Black;">&quot;</span> <span style="color:Blue;">/&gt;</span>
+        <span style="color:Blue;">&lt;/</span><span style="color:#A31515;">values</span><span style="color:Blue;">&gt;</span>
+      <span style="color:Blue;">&lt;/</span><span style="color:#A31515;">group</span><span style="color:Blue;">&gt;</span>
+    <span style="color:Blue;">&lt;/</span><span style="color:#A31515;">groups</span><span style="color:Blue;">&gt;</span>
+  <span style="color:Blue;">&lt;/</span><span style="color:#A31515;">custom</span><span style="color:Blue;">&gt;</span>
+<span style="color:Blue;">&lt;/</span><span style="color:#A31515;">configuration</span><span style="color:Blue;">&gt;</span>
+</pre></div>
+<h2>Links</h2>
+<ul><li><a href="http://outcoldman.ru/en/blog/show/223">Config Transformation Tool: Using XDT Transformation</a></li>
+<li>To get more details about transform file syntax go to <a href="http://msdn.microsoft.com/en-us/library/dd465326.aspx">http://msdn.microsoft.com/en-us/library/dd465326.aspx</a></li></ul></div><div class="ClearBoth"></div>

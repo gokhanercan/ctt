@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "It would be good to be able to fail transformation if a particular parameter was not found, reporting which parameters are missing.\r\nThat way newly added parameters don't just get ignored on transformation and the issue will be addressed, rather than missed.",
+    "LastUpdatedDate": "2014-02-17T15:08:45.133-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2014-02-17T14:50:50.717-08:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Add option to fail on missing parameters",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1610
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Pull requests are welcome :) ",
+      "PostedDate": "2014-02-17T15:08:45.133-08:00",
+      "Id": 133888
+    }
+  ]
+}

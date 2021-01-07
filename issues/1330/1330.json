@@ -1,0 +1,70 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 6,
+    "Custom": null,
+    "Description": "<p>For default install, this is what the program outputs when run with no flags/options on my box:</p>\r\n<p> </p>\r\n<p> </p>\r\n<p>log4net:ERROR XmlConfigurator: Failed to parse config file. Is the <configSections> specified as: <section nam</p>\r\n<p>e=\"log4net\" type=\"log4net.Config.Log4NetConfigurationSectionHandler,ctt, Version=1.2.4168.2175, Culture=neutra</p>\r\n<p>l, PublicKeyToken=null\" /></p>\r\n<p>System.Configuration.ConfigurationErrorsException: An error occurred creating the configuration section handle</p>\r\n<p>r for log4net: Request failed. (C:\\software\\Config Transformation Tool v1.2\\ctt.exe.Config line 6) ---> System</p>\r\n<p>.Security.SecurityException: Request failed.</p>\r\n<p>   at System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean&</p>\r\n<p>canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)</p>\r\n<p>   at System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache)</p>\r\n<p>   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean s</p>\r\n<p>kipCheckThis, Boolean fillCache)</p>\r\n<p>   at System.Activator.CreateInstance(Type type, Boolean nonPublic)</p>\r\n<p>   at System.Configuration.TypeUtil.CreateInstanceWithReflectionPermission(Type type)</p>\r\n<p>   at System.Configuration.RuntimeConfigurationRecord.RuntimeConfigurationFactory.Init(RuntimeConfigurationRec</p>\r\n<p>ord configRecord, FactoryRecord factoryRecord)</p>\r\n<p>   at System.Configuration.RuntimeConfigurationRecord.RuntimeConfigurationFactory.InitWithRestrictedPermission</p>\r\n<p>s(RuntimeConfigurationRecord configRecord, FactoryRecord factoryRecord)</p>\r\n<p>   at System.Configuration.RuntimeConfigurationRecord.CreateSectionFactory(FactoryRecord factoryRecord)</p>\r\n<p>   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRoo</p>\r\n<p>tDeclaredHere)</p>\r\n<p>   --- End of inner exception stack trace ---</p>\r\n<p>   at System.Configuration.BaseConfigurationRecord.FindAndEnsureFactoryRecord(String configKey, Boolean& isRoo</p>\r\n<p>tDeclaredHere)</p>\r\n<p>   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boole</p>\r\n<p>an checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObje</p>\r\n<p>ct)</p>\r\n<p>   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)</p>\r\n<p>   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSe</p>\r\n<p>ction(String sectionName)</p>\r\n<p>   at System.Configuration.ConfigurationManager.GetSection(String sectionName)</p>\r\n<p>   at log4net.Config.XmlConfigurator.Configure(ILoggerRepository repository)</p>\r\n<p>Config Transformation Tool, Version=1.2.4168.2175, http://ctt.codeplex.com</p>\r\n<p>by outcoldman, http://outcoldman.ru, 2010</p>\r\n<p> </p>\r\n<p>Arguments:</p>\r\n<p>  source:{file} (s:) - source file path</p>\r\n<p>  transform:{file} (t:) - transform file path</p>\r\n<p>  destination:{file} (d:) - destination file path</p>\r\n<p>  parameters:{parameters} (p:) - (Optional parameter)</p>\r\n<p>    string of parameters used expected by source file separated by ';',</p>\r\n<p>    value should be separated from name by ':',</p>\r\n<p>    if value contains spaces - quote it</p>\r\n<p>  parameters.file:{parameters file} (pf:) - (Optional parameter)</p>\r\n<p>    path to xml file which contains parameters with values</p>\r\n<p>    use xml schema ParametersSchema.xsd to make right file</p>\r\n<p>  fpt  - (Optional parameter) force parameters task</p>\r\n<p>    (if parameters argument is empty, but need to apply default values),</p>\r\n<p>    default is false</p>\r\n<p> </p>\r\n<p>Examples:</p>\r\n<p> </p>\r\n<p>ctt.exe source:\"source.config\"</p>\r\n<p>        transform:\"transform.config\"</p>\r\n<p>        destination:\"destination.config\"</p>\r\n<p> </p>\r\n<p>ctt.exe s:\"source.config\"</p>\r\n<p>        t:\"transform.config\"</p>\r\n<p>        d:\"destination.config\"</p>\r\n<p>        p:Parameter1:\"Value of parameter1\";Parameter2:Value2</p>\r\n<p> </p>\r\n<p>To get more details about transform file syntax go to</p>\r\n<p>http://msdn.microsoft.com/en-us/library/dd465326.aspx</p>\r\n<p> </p>\r\n<p> </p>\r\n<p> </p>\r\n<p>It looks like part of the app.config file is incorrect.  The program does seem to work as expected, but without logging.</p>\r\n",
+    "LastUpdatedDate": "2013-02-23T12:26:38.243-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2012-05-08T10:23:20.52-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "log4net broken, prints stack trace on program start",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 4,
+    "Id": 1330
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Had the same problem, but it turned out the downloaded zipfile was blocked. After removing block (right click on file and choose properties), the tool works :-)",
+      "PostedDate": "2012-06-14T07:08:41.123-07:00",
+      "Id": 86671
+    },
+    {
+      "Message": "This issue is also present when attempting to run ctt from a network drive/share (due to the default CAS policies, and the way that .Net 4 changed the CAS policy implementation)...\r\n\r\nTo enable network support...\r\n\r\n1) download v1.1.1 (listed as \"1.1 (1)\")... something about the way ILMerge combined log4net wasn't working when the other changes are performed... since ILMerge was used in 1.2, we go back to a prior version. I suspect it's related to some of the changes that Log4Net requires in the assemblyinfo.cs file when used in .Net 4 projects)\r\n\r\n2) edit ctt.config... add the following between  and  (second to last line):\r\n\t\r\n\t\t\r\n\t\r\n... this restores the CAS policy implementation used by the .Net 2.0 runtime... documentation at: http://msdn.microsoft.com/en-us/library/dd409253.aspx\r\n\r\n3) use caspol.exe to trust the EXE... \r\nC:\\Windows\\Microsoft.NET\\Framework\\v2.0.50727>CasPol.exe -m -ag 1.2 -url file://PATH\\TO\\ctt.exe FullTrust\r\n (replace the PATH\\TO\\ctt.exe with the network path you are using... for me, it was H:\\...\\ctt.exe)\r\nReferences:\r\nhttp://social.msdn.microsoft.com/forums/en-US/clr/thread/e4a65263-24f9-45a6-a2ad-6c26aae36075/\r\nhttp://msdn.microsoft.com/en-us/library/cb6t8dtz(v=vs.80).aspx\r\n\r\n\r\nOnce done, I had no problems running CTT from my network drive",
+      "PostedDate": "2012-06-26T11:33:43.993-07:00",
+      "Id": 86672
+    },
+    {
+      "Message": "Also, when using v1.1.1, make sure the ctt.exe.config has the correct log4net configuration section handler.\r\n\r\nAccording to the error messages I got, it should be...\r\n",
+      "PostedDate": "2012-06-26T11:40:56.43-07:00",
+      "Id": 86673
+    },
+    {
+      "Message": "I'm glad you found solution for this problem!",
+      "PostedDate": "2012-06-28T00:55:03.883-07:00",
+      "Id": 86674
+    },
+    {
+      "Message": "The error message is wrong.  It says the config file is bad but actually the problem is that the standard download package doesn't include the log4net.dll.  I downloaded the source and copied that DLL to the same folder as the ctt.exe and no more error message.",
+      "PostedDate": "2012-08-20T20:48:07.737-07:00",
+      "Id": 86675
+    },
+    {
+      "Message": "log4net is not part of ctt anymore.",
+      "PostedDate": "2013-02-23T12:26:38.243-08:00",
+      "Id": 91315
+    }
+  ]
+}

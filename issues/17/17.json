@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Transformation",
+      "DisplayName": "Transformation"
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2010-09-08T11:03:27.503-07:00",
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "<p>&quot;Web.config Transformation Syntax for Web Application Project Deployment&quot; doesn&#39;t support parameters, but it will be really useful. </p>\n<p>&nbsp;</p>\n<p>I can use nant syntax, like ${parameter1}. </p>\n<p>Will add argument to exe tool, for exmaple: p:parameter1=Value1;parameter2=&quot;Value2&quot;</p>\n<p>Before transform, I will create new file </p>\n<p>string predictionFilePath = transformFilePath + &quot;.prediction&quot;;</p>\n<p>Which will be transform file with replaced parameters to values.  </p>\n<p>&nbsp;</p>\n<p>Looks like easy task.</p>\n",
+    "LastUpdatedDate": "2010-09-08T11:03:27.503-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2010-08-25T23:20:54.16-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Support parameters at Transform file",
+    "Type": {
+      "Name": "Feature",
+      "Id": 1
+    },
+    "VoteCount": 1,
+    "Id": 17
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Resolved with changeset 668.",
+      "PostedDate": "2010-09-08T11:03:27.503-07:00",
+      "Id": 86678
+    }
+  ]
+}

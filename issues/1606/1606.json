@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2016-04-08T05:31:24.747-07:00",
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "Thankyou for creating the tool we all need!\r\n\r\nIn production I like to be able to identify certain settings fast. And from time to time, file comparing of 2 different configs may be necessary. Of this reason it would be nice if the output web.config was formatted as much in the same was as the original file as possible.\r\n\r\nIs this in the pipeline in anyways?\r\n\r\nThankyou in advance!",
+    "LastUpdatedDate": "2016-04-08T05:31:24.747-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2013-05-03T02:05:07.72-07:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Pretty formatting of output",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 6,
+    "Id": 1606
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "After reading more of the release notes, outcoldman has actually already added support for this.\nJust specify the \"preservewhitespace\" argument. I've tried it and it works brilliantly for me.\nI did notice that it didn't work if I also specified the 'Indent' argument but I just removed it and now it's working great.",
+      "PostedDate": "2013-11-08T05:49:27.33-08:00",
+      "Id": 122393
+    }
+  ]
+}

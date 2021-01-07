@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": "",
+    "Description": "<p>Instead of </p>\n<p>&nbsp;</p>\n<p>&lt;exec program=&quot;ctt.exe&quot;&gt;</p>\n<p>    &lt;arg value=&#39;source:&quot;${transformation.source}&quot;&#39; /&gt;</p>\n<p>    &lt;arg value=&#39;transformation:&quot;${transformation.file}&quot;&#39; /&gt;</p>\n<p>    &lt;arg value=&#39;destination:&quot;${transformation.destination}&quot;&#39; /&gt;</p>\n<p>&lt;/exec&gt;</p>\n<p>&nbsp;</p>\n<p>in nAnt script you can write </p>\n<p>&nbsp;</p>\n<p>&lt;ctt&gt;</p>\n<p>  &lt;source&gt;...&lt;/source&gt;</p>\n<p>  &lt;transform&gt;...&lt;/transform&gt;</p>\n<p>  &lt;destination&gt;...&lt;/destination&gt;</p>\n<p>&lt;/ctt&gt;</p>\n",
+    "LastUpdatedDate": "2010-09-14T01:11:23.33-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2010-09-14T01:11:23.33-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Create plugin for nant which will execute XDT task",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 115
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

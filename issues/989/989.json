@@ -1,0 +1,55 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "Tool Exe",
+      "DisplayName": "Tool Exe"
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 3,
+    "Custom": "",
+    "Description": "<p>Can you make a command line option, which allows to read the parameters which can be added by the p: option from a file which could look like this:</p>\n<p>&nbsp;</p>\n<p>&lt;parameters&gt;</p>\n<p>  &lt;param name=&quot;ServerName&quot; value=&quot;disneyland&quot; /&gt;</p>\n<p>  &lt;param name=&quot;RootDirectory&quot; value=&quot;D:\\Disneyland&quot; /&gt;</p>\n<p>  &lt;param name=&quot;DefaultUser&quot; value=&quot;MickeyMouse&quot; /&gt;</p>\n<p>&lt;/parameters&gt;</p>\n<p>&nbsp;</p>\n<p>Very handy if you have a lot of parameters.</p>\n",
+    "LastUpdatedDate": "2011-05-30T23:52:19.863-07:00",
+    "PlannedForRelease": "Config Transformation Tool v1.2",
+    "ReleaseVisibleToPublic": true,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2011-05-25T06:32:44.61-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Read Parameters from a Xml file",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 1,
+    "Id": 989
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Don't see any problem to do it. Give me some time. ",
+      "PostedDate": "2011-05-25T07:05:23.57-07:00",
+      "Id": 86679
+    },
+    {
+      "Message": "Done, please download latest version from Downloads tab.",
+      "PostedDate": "2011-05-30T15:28:38.337-07:00",
+      "Id": 86680
+    },
+    {
+      "Message": "Works like a charm :)",
+      "PostedDate": "2011-05-30T23:52:19.863-07:00",
+      "Id": 86681
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1056409",
+    "ThreadId": "446962",
+    "Html": "Is it possible to pass Windows Environmental Variables in the transformation file? Maybe through a switch?<br />\n<br />\nOur use case.<br />\nDue to separation of duties, Our shop does not store the environment's unique values in TFS but in an automation program. These unique values are passed to the servers at the time of deployment as Windows Environmental Variables. We currently have %varName% in the transformation file. Ctt transforms and literally puts %varName% in the xml file. <br />\nAs a workaround, we run a separate PowerShell task to parse the transformed xml file and replace the %varName% entries with the Windows Environmental Variable's value. I would like to We occasionally run into issues with file encoding due to PowerShell not natively being able to save the file in the original encoding.<br />\n<br />\nTo reduce deployment complexity and risk, we really would like to eliminate the PowerShell step.<br />\n",
+    "PostedDate": "2013-06-13T07:50:43.393-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

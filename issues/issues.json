@@ -1,0 +1,74 @@
+[
+  {
+    "Id": 17,
+    "Title": "Support parameters at Transform file"
+  },
+  {
+    "Id": 115,
+    "Title": "Create plugin for nant which will execute XDT task"
+  },
+  {
+    "Id": 989,
+    "Title": "Read Parameters from a Xml file"
+  },
+  {
+    "Id": 1238,
+    "Title": "Add ability to override read-only file"
+  },
+  {
+    "Id": 1330,
+    "Title": "log4net broken, prints stack trace on program start"
+  },
+  {
+    "Id": 1385,
+    "Title": "Namespace problem"
+  },
+  {
+    "Id": 1527,
+    "Title": "Chinese charaters issue"
+  },
+  {
+    "Id": 1538,
+    "Title": "Remove Log4Net"
+  },
+  {
+    "Id": 1605,
+    "Title": "Ability to include configSource configs."
+  },
+  {
+    "Id": 1606,
+    "Title": "Pretty formatting of output"
+  },
+  {
+    "Id": 1607,
+    "Title": "Windows Environmental Variables"
+  },
+  {
+    "Id": 1608,
+    "Title": "Merging comments not working"
+  },
+  {
+    "Id": 1609,
+    "Title": "Encoded XML malformed on transform"
+  },
+  {
+    "Id": 1610,
+    "Title": "Add option to fail on missing parameters"
+  },
+  {
+    "Id": 1611,
+    "Title": "\"Greater than\" sign within attribute value unwanted conversion"
+  },
+  {
+    "Id": 1612,
+    "Title": "Exit code 9009"
+  },
+  {
+    "Id": 1613,
+    "Title": "PreserveWhitespace does not preserve whitespace within an element"
+  },
+  {
+    "Id": 1614,
+    "Title": "Tool flashes then disappears"
+  }
+]

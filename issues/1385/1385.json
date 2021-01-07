@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": "",
+    "Description": "<p>First of all thank you for providing this tool.</p>\n<p>&#160;</p>\n<p>I have a problem with old web.config files with a namespace defined in the configuration tag, that causes an error when running the transformation. This is caused by a bug that has been fixed in Visual Studio 2010 SP1. </p>\n<p>&#160;</p>\n<p>A new build using the latest Microsoft.Web.Publishing.Tasks.dll would be much appreciated.</p>",
+    "LastUpdatedDate": "2012-10-25T06:37:56.21-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2012-06-15T01:26:05.15-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Namespace problem",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1385
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "sorry, tool is not supported anymore. I don't use it and I don't have a time to upgrade anything. but feel free to use sources to build your own version!",
+      "PostedDate": "2012-06-28T00:56:14.66-07:00",
+      "Id": 86676
+    }
+  ]
+}

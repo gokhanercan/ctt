@@ -1,0 +1,60 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": "2016-04-08T05:29:53.61-07:00",
+    "CommentCount": 4,
+    "Custom": null,
+    "Description": "I'm attempting to use your tool (which is *exactly* what I need) on a successful build.  I downloaded it into the Common7\\IDE\\Tools folder, but VS keeps saying the command, \"C:\\...\\Tools\\ctt.exe ...\" exited with code 9009.  I have tried using the built-in macros to fully qualify all file references but it doesn't seem to make a difference. What am I possibly doing wrong?",
+    "LastUpdatedDate": "2016-04-08T05:29:53.61-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2016-02-25T10:01:42.747-08:00",
+    "Status": {
+      "Name": "Closed",
+      "Id": 4
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Exit code 9009",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1612
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "Does it work outside of this folder?",
+      "PostedDate": "2016-02-25T10:36:22.557-08:00",
+      "Id": 196960
+    },
+    {
+      "Message": "Yes, I have run it successfully from the command line in the project folder.",
+      "PostedDate": "2016-02-25T11:08:52.15-08:00",
+      "Id": 196961
+    },
+    {
+      "Message": "Ok, so it is some kind of environment issues, possible that ctt is trying to access something from this folder but fails because it does not have access to this folder. The only one way to find out is to debug it or keep it in project folder.",
+      "PostedDate": "2016-02-25T12:23:37.137-08:00",
+      "Id": 196962
+    },
+    {
+      "Message": "I figured it out. 'Twas pretty stupid on my part.  Thanks for your assistance!",
+      "PostedDate": "2016-02-25T15:09:15.213-08:00",
+      "Id": 196968
+    }
+  ]
+}

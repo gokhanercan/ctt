@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "Add the ability to pass Windows Environmental Variables in the transformation file. Maybe through a switch.\r\n\r\nOur use case.\r\nDue to separation of duties, Our shop does not store the environment's unique values in TFS but in an automation program. These unique values are passed to the servers at the time of deployment as Windows Environmental Variables. We currently have %varName% in the transformation file. Ctt transforms and literally puts %varName% in the xml file.\r\nAs a workaround, we run a separate PowerShell task to parse the transformed xml file and replace the %varName% entries with the Windows Environmental Variable's value. I would like to We occasionally run into issues with file encoding due to PowerShell not natively being able to save the file in the original encoding.\r\n\r\nTo reduce deployment complexity and risk, we really would like to eliminate the PowerShell step.",
+    "LastUpdatedDate": "2013-07-01T10:49:19.02-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2013-07-01T10:49:19.02-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Windows Environmental Variables",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1607
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

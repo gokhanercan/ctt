@@ -1,0 +1,155 @@
+[
+  {
+    "Id": "0",
+    "Name": "Config Transformation Tool v1.5",
+    "DevelopmentStatus": "Alpha",
+    "Description": "{\"[+]\"} Add encoding parameter to specify default encoding.\n{\"[!]\"} Default encoding has been changed to utf8 (Unicode before). \n{\"[b]\"} If you use set of parameters where last of parameter uses quotes - tool trims last quote, which changes parameter value. \n{\"[b]\"} If 'indent' was specified, but not 'indentchars' - tool fails with ArgumentNullException.\n{\"[b]\"} If verbose flag is not specified tool does not output any error logs to console.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2013-10-24T00:42:05.113-07:00",
+    "Files": [
+      {
+        "Id": "2f08996d-88b5-4e75-9ce7-d1a5df8a3f72",
+        "FileName": "ctt.exe",
+        "Url": "./0/2f08996d-88b5-4e75-9ce7-d1a5df8a3f72",
+        "Type": "Application",
+        "UploadDate": "2013-10-24T00:41:18.687-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "1",
+    "Name": "Config Transformation Tool v1.4.1",
+    "DevelopmentStatus": "Alpha",
+    "Description": "[+] Add xml intending with parameters \"indent\" and \"indentchars.\" \n\nCheck properties http://msdn.microsoft.com/en-us/library/system.xml.xmlwritersettings.indent.aspx and http://msdn.microsoft.com/en-us/library/system.xml.xmlwritersettings.indentchars.aspx for details.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2013-05-05T16:04:38.997-07:00",
+    "Files": [
+      {
+        "Id": "220b7f41-4c91-4403-a771-ee8d6e9be11e",
+        "FileName": "ctt.exe",
+        "Url": "./1/220b7f41-4c91-4403-a771-ee8d6e9be11e",
+        "Type": "Application",
+        "UploadDate": "2013-05-05T16:04:38.81-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "2",
+    "Name": "Config Transformation Tool v1.4",
+    "DevelopmentStatus": "Alpha",
+    "Description": "* Add preservewhitespace (pw) argument, which forces to keep all whitespace in Xml Elements and Xml Attributes.\n* Respect encoding of source files.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2013-02-23T12:25:13.77-08:00",
+    "Files": [
+      {
+        "Id": "cd9cf470-5c82-4e5e-8135-2fbdc684a92d",
+        "FileName": "ctt.exe",
+        "Url": "./2/cd9cf470-5c82-4e5e-8135-2fbdc684a92d",
+        "Type": "Application",
+        "UploadDate": "2013-02-23T12:25:13.613-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "3",
+    "Name": "Config Transformation Tool v1.3",
+    "DevelopmentStatus": "Alpha",
+    "Description": "[+] Remove log4net (use Console.Out instead for logging, which can be turned on by \"verbose\" parameter in command arguments).\n[+] Switched to Microsoft.Web.Xdt (https://nuget.org/packages/Microsoft.Web.Xdt)",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2013-01-12T07:13:47.22-08:00",
+    "Files": [
+      {
+        "Id": "59161376-9a61-4f53-a63b-9102f64d77cf",
+        "FileName": "ctt.exe",
+        "Url": "./3/59161376-9a61-4f53-a63b-9102f64d77cf",
+        "Type": "Application",
+        "UploadDate": "2013-01-12T07:13:47.067-08:00"
+      }
+    ]
+  },
+  {
+    "Id": "4",
+    "Name": "Config Transformation Tool v1.2",
+    "DevelopmentStatus": "Stable",
+    "Description": "(+) Add support to load parameters from XML file ( http://ctt.codeplex.com/workitem/989 )\n(+) Exe file with libraries is merged into one exe file.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2011-05-30T15:27:10.277-07:00",
+    "Files": [
+      {
+        "Id": "9d9e6ab0-169b-4749-8203-6675c1a945a3",
+        "FileName": "Config Transformation Tool v1.2.zip",
+        "Url": "./4/9d9e6ab0-169b-4749-8203-6675c1a945a3",
+        "Type": "Application",
+        "UploadDate": "2011-05-30T15:27:10.12-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "5",
+    "Name": "Config Transformation Tool v1.1 (1)",
+    "DevelopmentStatus": "Stable",
+    "Description": "Changed exit code for success execution",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-09-20T03:06:52.63-07:00",
+    "Files": [
+      {
+        "Id": "8be303da-3203-45e6-8ccb-992d08ec6110",
+        "FileName": "ConfigTransformationTool_1_1_1.zip",
+        "Url": "./5/8be303da-3203-45e6-8ccb-992d08ec6110",
+        "Type": "Application",
+        "UploadDate": "2010-09-20T03:06:52.503-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "6",
+    "Name": "Config Transformation Tool v1.1",
+    "DevelopmentStatus": "Stable",
+    "Description": "Add feature: [url:Support parameters at Transform file|http://ctt.codeplex.com/workitem/17]",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-09-08T21:09:46.467-07:00",
+    "Files": [
+      {
+        "Id": "6cda5d66-cc62-4cbe-ab2b-12ffcdb8c8ac",
+        "FileName": "ConfigTransformationTool_1_1.zip",
+        "Url": "./6/6cda5d66-cc62-4cbe-ab2b-12ffcdb8c8ac",
+        "Type": "Application",
+        "UploadDate": "2010-09-08T21:09:46.357-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "7",
+    "Name": "Config Transformation Tool 1.0.3890.17440",
+    "DevelopmentStatus": "Stable",
+    "Description": "First version of ConfigTransformationTool.",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2010-08-25T23:44:04.167-07:00",
+    "Files": [
+      {
+        "Id": "d2a28d9d-8141-478c-8687-e830675ad10f",
+        "FileName": "ConfigTransformationTool_1_0_3890_17440.zip",
+        "Url": "./7/d2a28d9d-8141-478c-8687-e830675ad10f",
+        "Type": "Application",
+        "UploadDate": "2010-08-25T23:44:04.073-07:00"
+      }
+    ]
+  },
+  {
+    "Id": "8",
+    "Name": "Config Transformation Tool v1.6",
+    "DevelopmentStatus": "Alpha",
+    "Description": "* quiet mode [url:https://ctt.codeplex.com/SourceControl/network/forks/jhayford/ctt/contribution/8533]",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2015-10-29T15:25:31.337-07:00",
+    "Files": [
+      {
+        "Id": "caa294dd-eb66-4321-b774-a43e6961eeb0",
+        "FileName": "ctt.exe",
+        "Url": "./8/caa294dd-eb66-4321-b774-a43e6961eeb0",
+        "Type": "Application",
+        "UploadDate": "2015-10-29T15:25:31.057-07:00"
+      }
+    ]
+  }
+]

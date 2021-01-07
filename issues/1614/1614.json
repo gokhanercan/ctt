@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "When I run the exe for the tool, a window briefly appears but then disappears. I'm on Windows 8.1. Any ideas how I can run the utility, or at least see a log file to diagnose what's happening?",
+    "LastUpdatedDate": "2016-07-08T19:20:53.163-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2016-07-08T15:45:33.19-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Tool flashes then disappears",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1614
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This tool does not have any UI, it is a CLI tool. What do you expect to see?",
+      "PostedDate": "2016-07-08T19:20:53.163-07:00",
+      "Id": 200495
+    }
+  ]
+}

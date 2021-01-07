@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "945868",
+    "ThreadId": "404285",
+    "Html": "\r\n<p>Hi together,</p>\r\n<p>I want to build a Setup projekt (vdproj) in VS 2010, but the XMLTransform doesn't work properly, the .config file is empty:</p>\r\n<p>App.config:</p>\r\n<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;<br>\r\n&lt;configuration&gt;<br>\r\n&nbsp; &lt;appSettings&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;add key=&quot;Test&quot; value=&quot;&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;add key=&quot;Test1&quot; value=&quot;&quot;/&gt;<br>\r\n&nbsp; &lt;/appSettings&gt;<br>\r\n&lt;/configuration&gt;</p>\r\n<p>App.Release.config:</p>\r\n<p>&lt;?xml version=&quot;1.0&quot;?&gt;<br>\r\n&lt;!-- For more information on using app.config transformation visit http://go.microsoft.com/fwlink/?LinkId=125889 --&gt;<br>\r\n&lt;configuration xmlns:xdt=&quot;http://schemas.microsoft.com/XML-Document-Transform&quot;&gt;<br>\r\n&nbsp; &lt;appSettings&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;add key=&quot;Test&quot; value=&quot;Yes&quot; xdt:Transform=&quot;Replace&quot; xdt:Locator=&quot;Match(key)&quot; /&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;add key=&quot;Test1&quot; value=&quot;No&quot; xdt:Transform=&quot;Replace&quot; xdt:Locator=&quot;Match(key)&quot; /&gt;<br>\r\n&nbsp; &lt;/appSettings&gt;<br>\r\n&lt;/configuration&gt;</p>\r\n<p>Test.exe.config:</p>\r\n<p>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;<br>\r\n&lt;configuration&gt;<br>\r\n&nbsp; &lt;appSettings&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;add key=&quot;Test&quot; value=&quot;&quot;/&gt;<br>\r\n&nbsp;&nbsp;&nbsp; &lt;add key=&quot;Test1&quot; value=&quot;&quot;/&gt;<br>\r\n&nbsp; &lt;/appSettings&gt;<br>\r\n&lt;/configuration&gt;</p>\r\n<p>I see the Test.exe.config in the bin\\Release is ok, but after installation of TestSetup.msi I find only a &quot;empty&quot; Test.exe.config. What is the problem?</p>\r\n<p>Could anybody help me?</p>\r\n<p>Thanx in advance,</p>\r\n<p>pbo</p>\r\n",
+    "PostedDate": "2012-11-22T14:00:17.513-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

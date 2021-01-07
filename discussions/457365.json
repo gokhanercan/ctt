@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "1094252",
+    "ThreadId": "457365",
+    "Html": "Latest NuGet is version 1.2\r<br />\n<br />\nPlease update it when you have a chance.  Thanks.<br />\n",
+    "PostedDate": "2013-09-18T15:59:34.733-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1094258",
+    "ThreadId": "457365",
+    "Html": "I actually do not own NuGet package. Somebody did it for me :) So you should ask author of this package to update it. <br />\n",
+    "PostedDate": "2013-09-18T16:41:27.207-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 0,
+    "Custom": null,
+    "Description": "I have the following block within my transformation document ...\r\n\r\n```\r\n<?xml version=\"1.0\"?>\r\n\r\n<configuration xmlns:xdt=\"http://schemas.microsoft.com/XML-Document-Transform\">\r\n\t<connectionStrings>\r\n\t\t<add name=\"MyDb\"\r\n\t\t\tconnectionString=\"Data Source=localhost;Initial Catalog=MyCatalog;user id=MyUser;password=abc>123\"\r\n\t\t\txdt:Transform=\"SetAttributes\"\r\n\t\t\txdt:Locator=\"Match(name)\"/>\r\n\t</connectionStrings>\r\n</configuration>\r\n```\r\n\r\nwhen I run the transformation the connection string looks as follows ...\r\n\r\n```\r\n<add name=\"MyDb\" connectionString=\"Data Source=localhost;Initial Catalog=MyCatalog;user id=MyUser;password=abc&gt;123\" />\r\n```\r\n\r\nI can't find a way to keep the __>__ sign as is within the password string. I do not have the ability to change the password.",
+    "LastUpdatedDate": "2014-06-02T08:44:30.147-07:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Unassigned",
+      "Severity": 0,
+      "Id": 0
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2014-06-02T08:44:30.147-07:00",
+    "Status": {
+      "Name": "Proposed",
+      "Id": 1
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "\"Greater than\" sign within attribute value unwanted conversion",
+    "Type": {
+      "Name": "Unassigned",
+      "Id": 5
+    },
+    "VoteCount": 1,
+    "Id": 1611
+  },
+  "FileAttachments": [],
+  "Comments": []
+}

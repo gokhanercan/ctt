@@ -1,0 +1,67 @@
+[
+  {
+    "Id": "226865",
+    "Title": "Does this only support XML-based files?",
+    "LatestDate": "2010-09-11T06:57:17.383-07:00"
+  },
+  {
+    "Id": "227826",
+    "Title": "Please change exit codes",
+    "LatestDate": "2013-11-05T10:26:21.63-08:00"
+  },
+  {
+    "Id": "246123",
+    "Title": "Cant apply transform for NLog.config",
+    "LatestDate": "2011-02-15T08:51:47.063-08:00"
+  },
+  {
+    "Id": "281271",
+    "Title": "Can destination be the same as  source",
+    "LatestDate": "2011-11-30T20:49:02.943-08:00"
+  },
+  {
+    "Id": "281480",
+    "Title": "ctt NAnt Tasks",
+    "LatestDate": "2012-04-23T14:00:42.873-07:00"
+  },
+  {
+    "Id": "357967",
+    "Title": "Visual Studio Plugin",
+    "LatestDate": "2012-06-01T04:04:53.027-07:00"
+  },
+  {
+    "Id": "404285",
+    "Title": "Problem with VS Installer",
+    "LatestDate": "2012-11-22T14:00:17.513-08:00"
+  },
+  {
+    "Id": "430490",
+    "Title": "Error when building",
+    "LatestDate": "2013-02-23T11:43:29.253-08:00"
+  },
+  {
+    "Id": "439573",
+    "Title": "Formatting With 1.4",
+    "LatestDate": "2013-04-24T23:12:04.39-07:00"
+  },
+  {
+    "Id": "442278",
+    "Title": "Formatting issue with 1.4",
+    "LatestDate": "2013-05-05T16:09:23.477-07:00"
+  },
+  {
+    "Id": "446962",
+    "Title": "Windows Environmental Variables",
+    "LatestDate": "2013-06-13T07:50:43.393-07:00"
+  },
+  {
+    "Id": "457365",
+    "Title": "Update NuGet Package",
+    "LatestDate": "2013-09-18T16:41:27.207-07:00"
+  },
+  {
+    "Id": "652349",
+    "Title": "Ongoing support and updates?",
+    "LatestDate": "2016-03-09T11:51:56.727-08:00"
+  }
+]

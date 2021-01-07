@@ -1,0 +1,26 @@
+[
+  {
+    "Id": "990509",
+    "ThreadId": "430490",
+    "Html": "\r\n<p>I'm on Windows 7 (X64):</p>\r\n<p>&nbsp;</p>\r\n<p>The error is: The &quot;ILMerge.MSBuild.Tasks.ILMerge&quot; task could not be loaded from the assembly... (some more filler error message)...Confirm that the &lt;UsingTask&gt; declaration is correct, that the assembly and all its dependencies are available,\r\n and that the task contains a public class that implements Microsoft.Build.Framework.ITask.</p>\r\n<p>&nbsp;</p>\r\n<p>Any ideas on solving this? I want to debug this program but I cannot build it.</p>\r\n",
+    "PostedDate": "2013-01-22T12:26:09.063-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "990605",
+    "ThreadId": "430490",
+    "Html": "\r\n<p>Hi Mike,</p>\r\n<p>Try to update nugget packages for whole solution, if this will not help you - just comment this &quot;usingtask&quot; in project file.</p>\r\n",
+    "PostedDate": "2013-01-22T16:04:21.763-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "1005723",
+    "ThreadId": "430490",
+    "Html": "btw, I recently checked in all packages in source, because my project depends on MsBuild task, which is part of NuGet package, and because when you download NuGet package - VS does not reload Project - you still see this build problem. Relaunching VS fixes this, but it seems to me that will be easy just to keep all packages in repository. <br />\n",
+    "PostedDate": "2013-02-23T11:43:29.253-08:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

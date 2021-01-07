@@ -1,0 +1,18 @@
+[
+  {
+    "Id": "492171",
+    "ThreadId": "226865",
+    "Html": "<p>Do you have any samples where you can do transformations on non-XML-based files? Or does the tool not support such scenarios? Thanks.</p>",
+    "PostedDate": "2010-09-11T06:25:38.13-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  },
+  {
+    "Id": "492177",
+    "ThreadId": "226865",
+    "Html": "<p>Hi, tool based on&nbsp;<a href=\"Web.config Transformation Syntax for Web Application Project Deployment\">XML-Document-Transform task</a>. So transformation works only for XML-based files and tool doesn't support such scenarios. sorry.&nbsp;&nbsp;</p>",
+    "PostedDate": "2010-09-11T06:57:17.383-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

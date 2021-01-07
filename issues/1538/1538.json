@@ -1,0 +1,45 @@
+{
+  "WorkItem": {
+    "AffectedComponent": {
+      "Name": "",
+      "DisplayName": ""
+    },
+    "ClosedComment": "",
+    "ClosedDate": null,
+    "CommentCount": 1,
+    "Custom": null,
+    "Description": "<p>Please remove Log4Net, or create a separate build without it. There are people that use Log4Net on their computers and have it set up in the machine.config, and having an application use it in the app.config file conflicts with what's in the machine.config file. I get an ugly stack trace every time I run ctt.exe because Log4Net couldn't initialize.</p>\r\n<p> </p>\r\n<p>I couldn't care less about logging. I want a CTT build without it.</p>\r\n",
+    "LastUpdatedDate": "2013-02-23T11:45:40.933-08:00",
+    "PlannedForRelease": "",
+    "ReleaseVisibleToPublic": false,
+    "Priority": {
+      "Name": "Low",
+      "Severity": 50,
+      "Id": 1
+    },
+    "ProjectName": "ctt",
+    "ReportedDate": "2012-08-30T09:13:39.113-07:00",
+    "Status": {
+      "Name": "Resolved",
+      "Id": 7
+    },
+    "ReasonClosed": {
+      "Name": "Unassigned"
+    },
+    "Summary": "Remove Log4Net",
+    "Type": {
+      "Name": "Issue",
+      "Id": 3
+    },
+    "VoteCount": 2,
+    "Id": 1538
+  },
+  "FileAttachments": [],
+  "Comments": [
+    {
+      "Message": "This was fixed in one of the latest releases.",
+      "PostedDate": "2013-02-23T11:45:40.933-08:00",
+      "Id": 91312
+    }
+  ]
+}
