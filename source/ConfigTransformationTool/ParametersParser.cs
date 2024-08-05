@@ -66,9 +66,9 @@ namespace OutcoldSolutions.ConfigTransformationTool
                     continue;
                 }
 
-                if ((!fForceParameterValueRead && source[index] == ';')
+                if ((!fForceParameterValueRead && source[index] == '|')
                     || (fForceParameterValueRead && source[index] == '"'
-                        && ((index + 1) == source.Length || source[index + 1] == ';')))
+                        && ((index + 1) == source.Length || source[index + 1] == '|')))
                 {
                     AddParameter(parameters, parameterName, parameterValue);
                     index++;

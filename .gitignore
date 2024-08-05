@@ -1,0 +1,12 @@
+
+*.cache
+source/.vs/ConfigTransformationTool/v17/.suo
+source/.vs/ConfigTransformationTool/v16/.suo
+/source/ConfigTransformationTool/obj
+/source/ConfigTransformationTool/bin
+source/ConfigTransformationTool/.vs/ConfigTransformationTool.csproj.dtbcache.json
+/source/ConfigTransformationTool.Tests/bin
+/source/ConfigTransformationTool.Tests/obj
+/source/.vs/ConfigTransformationTool
+/source/.nuget
+/source/packages/ILMerge.MSBuild.Tasks.1.0.0.3/tools
